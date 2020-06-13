@@ -1,0 +1,119 @@
+#Article {
+  padding-bottom: 126px;
+  font-family: 'Open Sans', 'Roboto', sans-serif;
+  color: #303030;
+
+  &.loading {
+    height: calc(100vh + 126px - 59px);
+  }
+
+  .loadingContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+  }
+
+  .container {
+    @media (min-width: 1200px) {
+      max-width: 910px;
+    }
+  }
+
+  .banner {
+    margin-bottom: 70px;
+
+    .container {
+      z-index: 1;
+    }
+
+    &::after {
+      content: '';
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      background: linear-gradient(to left, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.4));
+    }
+  }
+
+  time {
+    display: block;
+    margin-bottom: 28px;
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: #747474;
+  }
+
+  h2 {
+    max-width: 23ch;
+    font-family: 'ITC Cheltenham W03 Book';
+  	font-size: 2.1875rem;
+  	line-height: 1.3;
+    text-align: left;
+    color: #fff;
+    text-shadow: 0px 0px 28px rgba(0, 0, 0, 0.7);
+  }
+
+  h3 {
+  	margin: 56px 0 21px 0;
+  	font-family: 'Gotham A', 'Gotham B', sans-serif;
+  	font-size: 1.125rem;
+  }
+
+  h4 {
+    margin-bottom: 7px;
+    margin-left: 7px;
+    font-size: 0.875rem;
+    font-weight: 500;
+
+    & + p {
+      margin-left: 7px;
+    }
+  }
+
+  p, li {
+    width: 100%;
+    max-width: 100%;
+    font-size: 0.9375rem;
+    line-height: 1.6;
+    text-align: justify;
+  }
+
+  p:not(.noMargin), .container > div {
+    margin-bottom: 28px;
+  }
+
+  li {
+    margin-bottom: 14px;
+  }
+
+  & > .container img {
+    width: 100%;
+    margin: 28px 0;
+  }
+
+  .MJXc-display, .MJXp-display {
+    display: inline;
+  }
+
+  .math {
+    margin-left: 14px;
+
+    & > * {
+      margin: 7px 0;
+    }
+  }
+
+  p.quote {
+    max-width: 56ch;
+    margin: 56px auto 70px auto;
+    text-align: center;
+
+    q {
+      font-style: italic;
+    }
+  }
+}

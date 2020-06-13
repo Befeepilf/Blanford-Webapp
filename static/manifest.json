@@ -1,0 +1,18 @@
+{
+  "name": "Blanford Digital",
+  "short_name": "Blanford",
+  "scope": "/d/",
+  "start_url": "/d/overview",
+  "display": "standalone",
+  "background_color": "#121212",
+  "theme_color": "#0079A3",
+  "icons": [{
+    "src": "/static/favicon-192.png",
+    "type": "image/png",
+    "sizes": "192x192"
+  }, {
+    "src": "/static/favicon-512.png",
+    "type": "image/png",
+    "sizes": "512x512"
+  }]
+}

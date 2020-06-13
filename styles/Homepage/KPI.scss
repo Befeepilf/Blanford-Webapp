@@ -1,0 +1,90 @@
+#KPI {
+  @keyframes highlightTarget {
+    from {
+      background-color: inherit;
+    }
+    to {
+      background-color: #cedbe9;
+    }
+  }
+
+  .banner h2 {
+    font-weight: bold;
+  }
+
+  .bg {
+    opacity: 0.5;
+  }
+
+  h3 {
+    margin-bottom: 14px;
+  }
+
+  strong {
+    font-family: 'helvetica neue regular', sans-serif;
+    font-weight: bold;
+  }
+
+  section:nth-child(2) .container {
+    margin-bottom: 210px;
+
+    p {
+      margin: 0 auto;
+      text-align: justify;
+    }
+
+    & > div {
+      max-width: 90ch;
+      margin: 0 auto;
+    }
+  }
+
+  ul {
+    list-style-type: none;
+    max-width: 90ch;
+    padding: 0;
+    margin: 0 auto 140px auto;
+  }
+
+  li {
+    padding: 7px;
+    margin-top: 70px;
+
+    &:target {
+      animation-name: highlightTarget;
+      animation-duration: 0.5s;
+      animation-iteration-count: 2;
+      animation-direction: alternate;
+    }
+  }
+
+  dl {
+    padding-left: 7px;
+  }
+
+  dt {
+    padding: 7px;
+    margin-top: 21px;
+
+    &::before {
+      content: '\2022';
+      margin-left: -14px;
+      margin-right: 5px;
+    }
+
+    &:target, &:target + dd {
+      animation-name: highlightTarget;
+      animation-duration: 0.5s;
+      animation-iteration-count: 2;
+      animation-direction: alternate;
+    }
+  }
+
+  dd {
+    padding: 7px;
+    padding-top: 0;
+    margin-left: 0;
+    line-height: 1.4;
+    text-align: justify;
+  }
+}

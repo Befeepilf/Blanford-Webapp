@@ -1,0 +1,11 @@
+<svg viewBox="0 0 564 448">
+  <path d="M42 441h435V112H277" fill="none" stroke="#fff" stroke-width="10"/>
+  <path d="M478 5H40v332M150 443V325h109" fill="none" stroke="#fff" stroke-width="10"/>
+  <path d="M371 215H149V5" fill="none" stroke="#fff" stroke-width="10"/>
+  <path class="big" d="M8 387h81V266h232l1 146 104 1-2-252H203V60h351" fill="none" stroke="#fff" stroke-width="15"/>
+  <g class="arrow">
+    <path d="M511 19l41 40M552 61l-41 41" fill="none" stroke="#fff" stroke-width="15"/>
+    <path d="M554 70l10-10-10-9v19z" fill="#fff"/>
+  </g>
+  <path d="M369 216v145" fill="none" stroke="#fff" stroke-width="10"/>
+</svg>

@@ -1,0 +1,133 @@
+@import 'vars';
+//@import '../../node_modules/normalize-scss/sass/normalize/import-now';
+@import 'bootstrap/bootstrap.scss';
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700|Roboto:300,400,500');
+
+@import url('https://cloud.typography.com/7002276/7463012/css/fonts.css');
+
+
+@import url("https://fast.fonts.net/lt/1.css?apiType=css&c=53486ebd-984e-41c0-bb90-0d4187536e43&fontids=5664085,5664103");
+@font-face{
+    font-family:"helvetica neue light";
+    src:url("./fonts/HelveticaNeue/licensed/light/cb0d1e8a-e111-4dbf-82c2-e948aba954c0.eot?#iefix");
+    src:url("./fonts/HelveticaNeue/licensed/light/cb0d1e8a-e111-4dbf-82c2-e948aba954c0.eot?#iefix") format("eot"),url("./fonts/HelveticaNeue/licensed/light/f9c5199e-a996-4c08-9042-1eb845bb7495.woff2") format("woff2"),url("./fonts/HelveticaNeue/licensed/light/2a34f1f8-d701-4949-b12d-133c1c2636eb.woff") format("woff"),url("./fonts/HelveticaNeue/licensed/light/fdf10d5e-4ce0-45e5-a6c1-5eaff6cb1c11.ttf") format("truetype");
+    font-display: fallback;
+}
+@font-face{
+    font-family:"helvetica neue medium";
+    src:url("./fonts/HelveticaNeue/licensed/medium/5640036d-d549-4f16-b31e-87da78d9e832.eot?#iefix");
+    src:url("./fonts/HelveticaNeue/licensed/medium/5640036d-d549-4f16-b31e-87da78d9e832.eot?#iefix") format("eot"),url("./fonts/HelveticaNeue/licensed/medium/240c57a0-fdce-440d-9ce3-85e0cb56f470.woff2") format("woff2"),url("./fonts/HelveticaNeue/licensed/medium/7802e576-2ffa-4f22-a409-534355fbea79.woff") format("woff"),url("./fonts/HelveticaNeue/licensed/medium/14d824a2-2a5c-4692-8e30-74f6e177b675.ttf") format("truetype");
+    font-display: fallback;
+}
+
+@font-face {
+    font-family: 'helvetica neue regular';
+    src: local('Helvetica Neue'), local('Helvetica Neue Regular'), local('Helvetica-Neue'), local('Helvetica-Neue-Regular'),
+      url('./fonts/HelveticaNeue/HelveticaNeue-Regular.woff2') format('woff2'),
+      url('./fonts/HelveticaNeue/HelveticaNeue-Regular.woff') format('woff'),
+        url('./fonts/HelveticaNeue/HelveticaNeue-Regular.ttf') format('truetype'),
+        url('./fonts/HelveticaNeue/HelveticaNeue-Regular.eot?#iefix') format('embedded-opentype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: fallback;
+}
+
+@import url("https://fast.fonts.net/lt/1.css?apiType=css&c=53486ebd-984e-41c0-bb90-0d4187536e43&fontids=5675041");
+@font-face{
+  font-family: "ITC Cheltenham W03 Book";
+  src:url("./fonts/ITCCheltenhamBook/ac069906-72a5-4550-b0a9-e7613c83e91e.eot?#iefix");
+  src:url("./fonts/ITCCheltenhamBook/ac069906-72a5-4550-b0a9-e7613c83e91e.eot?#iefix") format("eot"),
+  url("./fonts/ITCCheltenhamBook/f7932180-df0b-47cb-a38b-498a27a22072.woff2") format("woff2"),
+  url("./fonts/ITCCheltenhamBook/0cd6ab45-0600-4098-8110-94a53282f6ea.woff") format("woff"),
+  url("./fonts/ITCCheltenhamBook/3339e38a-18b9-4ccf-a70a-cb9825683d3a.ttf") format("truetype");
+  font-display: swap;
+}
+
+
+.no-js .lazy {
+  // when JS is turned off lazy loading will not work; instead a picture element inside a noscript will render;
+  // therefore the lazy picture element must be hidden
+  display: none;
+}
+
+html {
+  font-size: 3vw;
+  @media (min-width: 576px) {
+    font-size: 100%;
+  }
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+#__next {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+
+  & > * {
+    height: 100%;
+  }
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+}
+
+p {
+  margin: 0;
+}
+
+button {
+  border: 0;
+  user-select: none;
+  cursor: pointer;
+  color: inherit;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  outline: 0;
+  &:visited {
+    // color: inherit;
+    text-decoration: none;
+  }
+  &:link {
+    // color: inherit;
+    text-decoration: none;
+  }
+  &:hover {
+    // color: inherit;
+    text-decoration: none;
+  }
+  &:active {
+    color: inherit;
+    text-decoration: none;
+  }
+}
+
+p {
+  max-width: 90ch;
+  line-height: 1.6;
+}
+
+input, textarea {
+  outline: none;
+}
+
+// must be at root level
+.bg {
+  object-fit: cover;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 0;
+}

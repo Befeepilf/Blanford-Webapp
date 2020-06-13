@@ -1,0 +1,37 @@
+@import './bootstrap/breakpoints.scss';
+
+#CalcSection {
+  .container1 {
+    @each $key, $value in $grid-breakpoints {
+      @media (min-width: $value) {
+        padding: 0 calc((100vw - #{map-get($container-max-widths, $key)}) / 4) 0 calc((100vw - #{map-get($container-max-widths, $key)}) / 1.75);
+      }
+    }
+  }
+
+  .container2 {
+    @each $key, $value in $grid-breakpoints {
+      @media (min-width: $value) {
+        padding: 0 calc((100vw - #{map-get($container-max-widths, $key)}) / 1.5) 0 calc((100vw - #{map-get($container-max-widths, $key)}) / 1.75);
+      }
+    }
+  }
+
+  .desktop {
+    display: none;
+  }
+
+  .mobile {
+    display: unset;
+  }
+
+  @media (min-width: 576px) {
+    .desktop {
+      display: unset;
+    }
+
+    .mobile {
+      display: none;
+    }
+  }
+}

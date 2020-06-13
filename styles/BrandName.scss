@@ -1,0 +1,20 @@
+@import url('//hello.myfonts.net/count/387186');
+@font-face {
+  font-family: 'cerapro medium';
+  src: url('./fonts/CeraPro/CeraPro-Medium.eot');
+  src: url('./fonts/CeraPro/CeraPro-Medium.eot?#iefix') format('embedded-opentype'),
+      url('./fonts/CeraPro/CeraPro-Medium.woff2') format('woff2'),
+      url('./fonts/CeraPro/CeraPro-Medium.woff') format('woff'),
+      url('./fonts/CeraPro/CeraPro-Medium.ttf') format('truetype');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'cerapro regular';
+  src: url('./fonts/CeraPro/CeraPro-Regular.eot');
+  src: url('./fonts/CeraPro/CeraPro-Regular.eot?#iefix') format('embedded-opentype'),
+    url('./fonts/CeraPro/CeraPro-Regular.woff2') format('woff2'),
+    url('./fonts/CeraPro/CeraPro-Regular.woff') format('woff'),
+    url('./fonts/CeraPro/CeraPro-Regular.ttf') format('truetype');
+  font-display: swap;
+}

@@ -1,0 +1,16 @@
+.blogGrid {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-column-gap: 70px;
+  grid-row-gap: 70px;
+  padding: 0 14px;
+
+  @media (min-width: 406px) {
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    padding: 0 28px;
+  }
+
+  @media (min-width: 1200px) {
+    grid-column-gap: 210px;
+  }
+}

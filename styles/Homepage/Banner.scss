@@ -1,0 +1,60 @@
+section.banner {
+  position: relative;
+  padding: 63px;
+  margin-bottom: 119px;
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+  }
+
+  .bg {
+    object-fit: cover;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 0;
+  }
+
+  h2 {
+    margin: 0;
+    font-family: 'ITC Cheltenham W03 Book';
+    font-size: 4rem;
+    font-weight: normal;
+    text-align: center;
+
+    &:not(.dark) {
+      text-shadow: 1px 1px 7px rgba(0, 0, 0, 0.5);
+      color: #fff;
+    }
+
+    .dark {
+      color: #000;
+    }
+
+    .long {
+      display: none;
+    }
+
+    @media (min-width: 768px) {
+      .long {
+        display: block;
+      }
+      .short {
+        display: none;
+      }
+    }
+  }
+
+  &.overlay {
+    background-color: #3576d4;
+
+    .bg {
+      opacity: 0.68;
+    }
+  }
+}

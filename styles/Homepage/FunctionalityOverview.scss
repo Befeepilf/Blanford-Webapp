@@ -1,0 +1,11 @@
+#FunctionalityOverview {
+  section {
+    font-size: 1.16875rem;
+
+    &:nth-child(1) {
+      .bg {
+        object-position: center 43%;
+      }
+    }
+  }
+}

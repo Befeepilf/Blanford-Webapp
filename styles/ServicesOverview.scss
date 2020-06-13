@@ -1,0 +1,141 @@
+#ServicesOverview {
+  h3 {
+    margin-bottom: 28px;
+  	font-size: 1.375rem;
+    font-weight: 500;
+
+    & + p {
+      max-width: 105ch;
+      font-family: 'helvetica neue light', sans-serif;
+    }
+  }
+
+  h3, h4, h5 {
+    font-family: 'Gotham A', 'Gotham B', sans-serif;
+  }
+
+  h4 {
+    padding-bottom: 28px;
+    margin-top: 84px;
+    margin-bottom: 28px;
+    font-weight: 500;
+    border-bottom: 2px solid #efefef;
+  }
+
+  h5 {
+    margin-bottom: 7px;
+    font-size: 0.9375rem;
+    font-weight: 500;
+  }
+
+  p {
+  	font-family: 'Roboto', sans-serif;
+  }
+
+  nav {
+    display: flex;
+    padding-bottom: 24px;
+    overflow: hidden;
+    overflow-x: auto;
+  }
+
+  button {
+    position: relative;
+    height: 154px;
+    padding: 21px 28px;
+    cursor: pointer;
+    border: 3px solid transparent;
+    border-radius: 18px;
+    transition: border-color 0.3s;
+
+    &.active {
+      border-color: #01a6e0;
+
+      &::after {
+        content: '';
+        position: absolute;
+        width: 7px;
+        bottom: -27px;
+        left: 50%;
+        right: 50%;
+        border: 7px solid transparent;
+        border-bottom-color: #dedede;
+      }
+    }
+
+    &.disabled img {
+      filter: grayscale(1) brightness(1.4);
+    }
+
+    img {
+      border-radius: 14px;
+    }
+
+    &:first-child {
+      margin-right: 28px;
+    }
+
+    p {
+      position: relative;
+      z-index: 1;
+      font-family: 'Gotham A', 'Gotham B', sans-serif;
+      font-size: 1.125rem;
+      font-weight: 500;
+      letter-spacing: 0.0625rem;
+      white-space: nowrap;
+      color: rgba(255, 255, 255, 0.95);
+
+      &:first-child {
+        margin-top: -52%
+      }
+    }
+
+    .brand {
+      position: absolute;
+      bottom: 21px;
+      right: 28px;
+      font-family: 'cerapro medium', sans-serif;
+      font-size: 1.3125rem;
+      color: rgba(255, 255, 255, 0.7);
+    }
+  }
+
+  .content {
+    padding-top: 42px;
+    border-top: 1px solid #dedede;
+
+    ul {
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+
+      @media (min-width: 576px) {
+        column-count: 2;
+        column-gap: 70px;
+      }
+
+      @media (min-width: 768px) {
+        column-gap: 140px;
+      }
+    }
+
+    li {
+      break-inside: avoid;
+      padding-top: 28px;
+    }
+  }
+
+  @media (min-width: 576px) {
+    button {
+      height: 196px;
+
+      &:first-child {
+        margin-right: 56px;
+      }
+    }
+
+    p {
+      font-size: 0.9375rem;
+    }
+  }
+}
